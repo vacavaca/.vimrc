@@ -89,6 +89,8 @@ map <C-n> :NERDTreeToggle<CR>
 command! -complete=file -nargs=1 Remove :echo 'Remove: '.'<f-args>'.' '.(delete(<f-args>) == 0 ? '<f-args> removed' : 'ERROR')
 cnoreabbrev rm Remove
 
+cnoreabbrev ag Ag
+
 "map  n <Plug>(easymotion-next)
 "map  N <Plug>(easymotion-prev)
 
