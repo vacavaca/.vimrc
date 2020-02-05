@@ -10,6 +10,7 @@ command! E Explore
 " Ctrl-P
 
 let g:ctrlp_custom_ignore = 'node_modules\|dist\|build\|git'
+let g:ctrlp_max_files=0
 
 " Racer setup
 set hidden
