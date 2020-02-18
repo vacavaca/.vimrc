@@ -101,3 +101,5 @@ cnoreabbrev ag Ag
 set visualbell
 set noerrorbells
 
+set exrc
+set secure
