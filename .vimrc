@@ -10,7 +10,6 @@ command! E Explore
 " Ctrl-P
 
 let g:ctrlp_custom_ignore = 'node_modules\|dist\|build\|git'
-let g:ctrlp_max_files=0
 
 " Racer setup
 set hidden
@@ -25,13 +24,15 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'udalov/javap-vim'
+Plugin 'udalov/javap-vim' " Needs something
 Plugin 'easymotion/vim-easymotion'
 Plugin 'scrooloose/nerdtree'
 Plugin 'pbrisbin/vim-mkdir'
-Plugin 'rust-lang/rust.vim'
-Plugin 'junegunn/fzf'
-Plugin 'junegunn/fzf.vim'
+Plugin 'rust-lang/rust.vim' " Needs something
+Plugin 'junegunn/fzf' " Needs many things
+Plugin 'junegunn/fzf.vim' " needs many things
+"Plugin 'xavierd/clang_complete' " Needs clang
+
 
 call vundle#end()
 filetype plugin indent on
@@ -101,5 +102,13 @@ cnoreabbrev ag Ag
 set visualbell
 set noerrorbells
 
-set exrc
-set secure
+
+let g:clang_library_path='/usr/lib/llvm-3.8/lib'
+
+
+hi NonText ctermbg=NONE
+
+
+set textwidth=80
+set colorcolumn=80
+
